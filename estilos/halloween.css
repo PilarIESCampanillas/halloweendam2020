@@ -1,0 +1,53 @@
+/* HOJA DE ESTILO DE LA PRESENTACIÓN DE HALLOWEEN */
+/* CURSO 2020/21 */
+
+@font-face {
+    font-family: halloween1;
+    src: url('tipografias/ShallowGraveBB.ttf');
+}
+body {background-color: black;}
+#container {position:relative; /* EL CONTENEDOR, RELATIVO */
+            background-image:url('../imagenes/wallpaper.png');
+            margin:auto;
+            width:1306px; /* NO ES RESPONSIVE, OJO */
+            height:638px; /* solo es un ejercicio por diversión */
+            }
+#titulo {position:absolute; /* EL CONTENIDO, ABSOLUTO */
+         top:20px;
+         left:500px;
+         font-family:halloween1;
+         font-size: 3em;
+         color:orange;
+         text-shadow:1px 1px 1px black;
+}
+#advertencia {position:absolute;
+              top:130px;
+              left:300px;
+              font-size:2em;
+              color:red;
+}
+#bats {position: absolute;
+       top:100px;
+       left:150px;
+       visibility:hidden;}
+#calabaza {position:absolute;
+           top:400px;
+           left:80px;
+           width:100px;
+           height:100px;
+           cursor:pointer;
+           /*border:1px solid white;*/}
+#mano {position:absolute;
+       top:330px;
+       left:720px;
+       width:80px;
+       height:100px;
+       cursor:pointer;
+       /*border:1px solid white;*/         
+}
+#zombie {position:absolute;
+         top:400px;
+         left:500px;
+         visibility:hidden;
+         cursor:crosshair;
+}

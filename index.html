@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorífica fiesta de Halloween</title>
+    <!-- el estilo está fuera y se enlaza con etiqueta link -->
+    <link rel="stylesheet" href="estilos/halloween.css">
+    <!-- las funciones de js están fuera y las enlazo con el atributo src-->
+    <script src="javascripts/halloween.js">
+    </script>
+</head>
+<body onload="sonar('nana')"><!-- el evento que hace sonar la nana es
+                                  cargar la página. Sonar es una función
+                                  que voy a definir en la zona de script-->
+    <div id="container">
+        <audio src="sonidos/lullaby.mp3" id="nana" controls>
+        </audio><!-- sonido de fondo -->
+        <audio src="sonidos/murcielago.mp3" id="murcielago">
+        </audio>
+        <audio src="sonidos/grito.mp3" id="grito">
+        </audio><!-- sonido de murcielago, se activa cuando aparecen-->
+        <p id="titulo">Terrorífica Fiesta de Halloween</p>
+        <p id="advertencia">No toques la calabaza de la izquierda</p>
+        <img id="bats" src="imagenes/bats.gif" width="200">
+        <div id="calabaza" onmouseover="mostrar('bats');sonar('murcielago')"
+        onmouseout="ocultar('bats');parar('murcielago')"></div>
+        <div id="mano" onclick="mostrar('zombie');sonar('grito')"></div>
+        <img id="zombie" src="imagenes/zombie.gif" width="180" onclick="ocultar('zombie');parar('grito')">
+    </div>
+</body>
+</html>
